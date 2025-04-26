@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registro de Usuarios</h1>
+    <form id="registroForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br><br>
+
+        <button type="submit">Registrar</button>
+        <div id="error" class="error"></div>
+    </form>
+
+    <h2>Usuarios Registrados</h2>
+    <ul id="usuarios"></ul>
+    <div id="total">Total de usuarios: 0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
